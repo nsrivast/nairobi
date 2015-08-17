@@ -1,0 +1,60 @@
+.bodyContainer {
+	padding: 15px;
+}
+
+/* Header */
+
+.headerTitle {
+	text-align: right;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.headerTitle a {
+	text-decoration: underline;
+}
+
+.headerBlurb {
+	text-align: right;
+	font-size: 16px;
+	line-height: 2;
+}
+
+/* Categories */
+
+.categoryHeader {
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px;
+	padding-left: 5px;
+	
+}
+
+.categoryHeaderHighlight {
+	background: #e0e0e0;
+	text-decoration: underline;
+}
+
+/* Posts */
+
+.post {
+	font-size: 12px;
+	padding: 5px;
+	padding-left: 10px;
+	margin-bottom: 10px;;
+}
+
+.postHighlight {
+	background: #ffff99;
+}
+
+.postTitle {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.postLink {
+	text-align: right;
+	float: right;
+}
