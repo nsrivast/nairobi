@@ -3,7 +3,7 @@ Loads map data: categories, posts, markers.
 */
 
 var defaultMapOptions = {
-  center: { lat: -1.28, lng: 36.82 },
+  center: { lat: -1.277, lng: 36.83 },
   zoom: 13,
 	mapTypeId: google.maps.MapTypeId.ROADMAP
 };
