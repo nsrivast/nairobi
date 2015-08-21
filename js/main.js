@@ -129,7 +129,7 @@ function categoryActions() {
 	// On hover: highlight this box, highlight category markers
 	$(".categoryHeader").hover(
 		function() { 
-			colorMarkers('categoryID', this.getAttribute("data-id"), 'yellow');
+			colorMarkers('categoryID', this.getAttribute("data-id"), this.getAttribute('data-color') + '_select');
 			$(this).addClass('categoryHeaderHighlight');
 		},
 		function() { 
@@ -149,7 +149,7 @@ function postActions() {
 	// On hover: highlight my box, highlight post markers
 	$(".post").hover(
 		function() { 
-			colorMarkers('postID', this.getAttribute('data-id'), 'yellow');
+			colorMarkers('postID', this.getAttribute('data-id'), this.getAttribute('data-color') + '_select');
 			$(this).addClass('postHighlight');
 		},
 		function() { 
@@ -166,7 +166,7 @@ function markerActions() {
 		google.maps.event.addListener(markers[i], 'mouseover', function() {
 			$('#header' + this.categoryID).addClass('categoryHeaderHighlight');
 			$('#post' + this.postID).addClass('postHighlight');
-			colorMarkers('postID', this.postID, 'yellow');
+			colorMarkers('postID', this.postID, this.color + '_select');
 		});
 		google.maps.event.addListener(markers[i], 'mouseout', function() {
 			$('#header' + this.categoryID).removeClass('categoryHeaderHighlight');

@@ -38,6 +38,14 @@
 	text-decoration: underline;
 }
 
+#categoryContainer {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	position: relative;
+	height: 450px;
+	overflow-y: scroll;
+}
+
 /* Posts */
 
 .post {
